@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formulario.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+
+    <form class="formulario" action="" method="post" id="formulario">
+
+        <div class="grupo" id="grupo_TipoDoc">
+            <label for="TipoDoc" class="label">Tipo de documento</label>
+            <select class="input">
+                <option value="">Seleccionar</option>
+                <option value="" id="TipoDoc" name="TipoDoc">Registro civil</option>
+                <option value="" id="TipoDoc" name="TipoDoc">Tarjeta de identidad</option>
+                <option value="" id="TipoDoc" name="TipoDoc">Cedula de cuidadania</option>
+                <option value="" id="TipoDoc" name="TipoDoc">Pasaporte</option>
+            </select>
+            <p class="formulario__input-error">Debe seleccionar algun tipo de documento</p>
+        </div>
+
+
+        <div class="grupo" id="grupo__NDoc">
+            <label for="NDoc" class="label"># Documento</label>
+            <input type="text" class="input" name="NDoc" id="NDoc">
+            <p class="formulario__input-error">Debe contener solo números y una logitud de minimo 11 caracteres</p>
+        </div>
+
+
+        <div class="grupo" id="grupo__nombre">
+            <label for="nombre" class="label">Nombre</label>
+            <input type="text" class="input" name="nombre" id="nombre">
+            <p class="formulario__input-error">El nombre tiene que tener solo letras.</p>
+
+        </div>
+
+
+        <div class="grupo" id="grupo__apellido">
+            <label for="apellido" class="label">Apellido</label>
+            <input type="text" class="input" name="apellido" id="apellido">
+            <p class="formulario__input-error">El apellido tiene que tener solo letras.</p>
+        </div>
+
+        <div class="grupo" id="grupo__fecha">
+            <label for="fecha" class="label">Fecha Nacimiento</label>
+            <input type="date" class="input" name="fecha" id="fecha" placeholder="">
+            <p class="formulario__input-error">La fecha tiene que tener números y slash(/) .</p>
+
+        </div>
+
+        <div class="grupo" id="grupo__correo">
+            <label for="correo" class="label">Correo electronico</label>
+            <input type="text" class="input" name="correo" id="correo" placeholder="correo@correo.com">
+            <p class="formulario__input-error">El correo solo puede contener letras, números, . , - , _ y @.</p>
+
+        </div>
+
+        <div class="grupo" id="grupo__contraseña">
+            <label for="contraseña" class="label">Password</label>
+            <input type="password" class="input" name="contraseña" id="contraseña">
+            <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+
+        </div>
+
+        <div class="grupo" id="grupo__contraseña1">
+            <label for="contraseña1" class="label">Comprobar password</label>
+            <input type="password" class="input" name="contraseña1" id="contraseña1">
+            <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+        </div>
+
+        <div class="grupo" id="grupo__terminos">
+            <label class="label" for="terminos">
+                <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                Acepto los Terminos y Condiciones
+            </label>
+        </div>
+
+        <div class="formulario__mensaje" id="formulario__mensaje">
+            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente.
+            </p>
+        </div>
+
+        <div class="grupo formulario__grupo-btn-enviar">
+            <button type="submit" class="btn">Enviar</button>
+            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+        </div>
+    </form>
+
+    <script src="js/Formulario.js"></script>
+</body>
+
+</html>

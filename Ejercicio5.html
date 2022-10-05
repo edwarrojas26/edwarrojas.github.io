@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6131ecdde6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style_modal.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="tittle">Ejercicio 5</h1>
+    </div>
+    <!--!modalTriangulo------------------------------------------ ------------------------------------------  -->
+    <div class="contenedor">
+        <div class="cardT">
+            <img src="img/triangulo.jpeg" alt="">
+            <input type="submit" class="perimetroT" value="Perimetro">
+            <input type="submit" class="areaT" value="Área">
+        </div>
+
+        <!--!Rectangulo------------------------------------------ ------------------------------------------  -->
+
+        <div class="cardR">
+            <img src="img/rectangulo.jpeg" alt="">
+            <input type="submit" class="perimetroR" id="perimetroR" value="Perimetro">
+            <input type="submit" class="areaR" id="areaR" value="Área">
+        </div>
+
+        <!--!Cuadrado------------------------------------------ ------------------------------------------  -->
+
+        <div class="cardCU">
+            <img src="img/cuadrado.jpeg" alt="">
+            <input type="submit" class="perimetroCu" value="Perimetro">
+            <input type="submit" class="areaCu" value="Área">
+        </div>
+
+        <!--!Circulo------------------------------------------ ------------------------------------------  -->
+
+        <div class="cardCi">
+            <img src="img/circulo.jpeg" alt="">
+            <input type="submit" class="perimetroCi" id="perimetroCi" value="Perimetro">
+            <input type="submit" class="areaCi" id="areaCi" value="Área">
+        </div>
+    </div>
+
+
+
+    <!--!Modales-->
+
+    <!--*Modal Triangulo-->
+    <!-- *Perimetro -->
+    <div class="modalPT">
+        <div class="container1">
+            <h1 class="tittle1">Perimetro Triangulo</h1>
+        </div>
+        <span class="cerrarModal"><i class="fa-solid fa-xmark"></i></span>
+
+        <div class="datos">
+            <label for="">Ingrese el valor del lado 1</label>
+            <input type="text" class="lado1"><br><br>
+            <label for="">Ingrese el valor del lado 2</label>
+            <input type="text" class="lado2"><br><br>
+            <label for="">Ingrese el valor del lado 3</label>
+            <input type="text" class="lado3"><br><br>
+            <input type="submit" class="calcularPT" value="Calcular Perimetro">
+        </div>
+
+
+
+
+    </div>
+
+
+    <!-- *Area -->
+    <div class="modalAT">
+        <div class="container1">
+            <h1 class="tittle1">Área Triangulo</h1>
+        </div>
+        <span class="cerrarModal1"><i class="fa-solid fa-xmark"></i></span>
+
+        <div class="datos">
+            <label for="">Ingrese el valor del base:</label>
+            <input type="text" class="base"><br><br>
+            <label for="">Ingrese el valor del altura:</label>
+            <input type="text" class="altura"><br><br>
+            <input type="submit" class="calcularAT" value="Calcular Area">
+        </div>
+
+
+
+
+    </div>
+
+    <!--!Final modal Triangulo-->
+
+    <!--*Modal Rectangulo-->
+
+    <!-- *Perimetro -->
+    <div class="modalPR">
+        <div class="container1">
+            <h1 class="tittle1">Perimetro Rectangulo</h1>
+        </div>
+        <span class="cerrarModal2"><i class="fa-solid fa-xmark"></i></span>
+
+        <div class="datos">
+            <label for="">Ingrese el valor del lado 1</label>
+            <input type="text" class="lado4"><br><br>
+            <label for="">Ingrese el valor del lado 2</label>
+            <input type="text" class="lado5"><br><br>
+            <input type="submit" class="calcularPR" value="Calcular Perimetro">
+        </div>
+
+
+
+
+
+    </div>
+
+
+    <!-- *Area -->
+    <div class="modalAR">
+        <div class="container1">
+            <h1 class="tittle1">Área Rectangulo</h1>
+        </div>
+        <span class="cerrarModal3"><i class="fa-solid fa-xmark"></i></span>
+
+        <div class="datos">
+            <label for="">Ingrese el valor del base:</label>
+            <input type="text" class="base1"><br><br>
+            <label for="">Ingrese el valor del altura:</label>
+            <input type="text" class="altura1"><br><br>
+            <input type="submit" class="calcularAR" value="Calcular Area">
+        </div>
+
+
+
+    </div>
+    <!--!Final Modal Rectangulo-->
+
+    <!--* Modal Cuadrado-->
+    <!-- *Perimetro -->
+    <div class="modalPCu">
+        <div class="container1">
+            <h1 class="tittle1">Perimetro Cuadrado</h1>
+        </div>
+        <span class="cerrarModal4"><i class="fa-solid fa-xmark"></i></span>
+
+        <div class="datos">
+            <label for="">Ingrese el valor del lado:</label>
+            <input type="text" class="lado"><br><br>
+            <input type="submit" class="calcularPCU" value="Calcular Perimetro">
+        </div>
+
+
+
+
+    </div>
+
+
+    <!-- *Area -->
+    <div class="modalACu">
+        <div class="container1">
+            <h1 class="tittle1"> Área Cuadrado</h1>
+        </div>
+
+        <span class="cerrarModal5"><i class="fa-solid fa-xmark"></i></span>
+
+        <div class="datos">
+            <label for="">Ingrese el valor de base y altura</label>
+            <input type="text" class="baseyaltura"><br><br>
+            <input type="submit" class="calcularACU" value="Calcular Area">
+        </div>
+
+    </div>
+    <!--!Final modal Cuadrado-->
+
+    <!--*Modal Circulo-->
+    <!-- *Perimetro -->
+    <div class="modalPCI">
+        <div class="container1">
+            <h1 class="tittle1">Perimetro Circulo</h1>
+        </div>
+        <span class="cerrarModal6"><i class="fa-solid fa-xmark"></i></span>
+
+        <div class="datos">
+            <label for="">ingrese el valor del radio</label>
+            <input type="text" class="r"><br><br>
+            <input type="submit" class="calcularPCI" value="Calcular Perimetro">
+        </div>
+
+
+
+
+    </div>
+
+
+    <!-- *Area -->
+    <div class="modalACI">
+        <div class="container1">
+            <h1 class="tittle1">Área Circulo</h1>
+        </div>
+        <span class="cerrarModal7"><i class="fa-solid fa-xmark"></i></span>
+        <div class="datos">
+            <label for="">Ingrese el valor del radio</label>
+            <input type="text" class="r"><br><br>
+            <input type="submit" class="calcularACI" value="Calcular Area">
+        </div>
+
+
+    </div>
+    <!--!Final modal Circulo-->
+
+
+    <script src="js/modal.js"></script>
+    <script src="js/Ejercicio5.js"></script>
+</body>
+
+</html>
